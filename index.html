@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top__carousel">
+                <div class="carousel__item">
+                  <img src="img/item.jpg" alt="Image 1">
+                </div>
+                <div class="carousel__item">
+                  <img src="img/item.jpg" alt="Image 2">
+                </div>
+                <div class="carousel__item">
+                  <img src="image3.jpg" alt="Image 3">
+                </div>
+                <div id="prev">Предыдущее</div>
+                <div id="next">Следующее</div>
+            </div>
+            <!-- Header-Middle -->
+            
+        </div>
+        <div class="header__middle">
+            <div class="header__middle-logo">
+                <img src="img/logo.jpg" alt="" class="header__middle-logo-img">
+                    <h1 class="header__middle-info-time">ДОСТАВКА (c 16:00 до 3:00) </h1>
+                    <h1 class="header__middle-info-number">+7 (952) 025-46-48</h1>
+            </div>
+            
+
+            <div class="header__middle-cart">
+                <div id="offcanvas" class="offcanvas">
+                    <div class="offcanvas__header">
+                      <h2>Корзина</h2>
+                      <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="offcanvas__body">
+                      <h1 class="offcanvas__body-title">Ой, Пусто!</h1>
+                      <p class="offcanvas__body-subtitle">Ваша корзина пуста, откройте «Меню»
+                        и выберите понравившийся товар.</p>
+                        <button class="offcanvas__body-button">К покупкам</button>
+                    </div>
+                   </div>
+                   
+                   <button id="open-btn"><i class="fa-solid fa-cart-shopping"><span>Корзина пуста</span></i></button>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__bottom-nav">
+                <a href="#" class="header__bottom-link">Супы</a>
+                <a href="#" class="header__bottom-link">Закуски</a>
+                <a href="#" class="header__bottom-link">Салаты</a>
+                <a href="#" class="header__bottom-link">Паста</a>
+                <a href="#" class="header__bottom-link">Пицца</a>
+                <a href="#" class="header__bottom-link">Сэндвичи</a>
+                <a href="#" class="header__bottom-link">Бургеры</a>
+                <a href="#" class="header__bottom-link">Десерты</a>
+                <a href="#" class="header__bottom-link">Напитки</a>
+                <div class="header__bottom-dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Контакты</a>
+                      <a href="#">О нас</a>
+                      <a href="#">Прочее</a>
+                    </div>
+                  </div>             
+             
+            </div>
+        </div>
+    </header>
+
+    <!-- End Header -->
+    <!-- Start Main -->
+    <main class="main">
+        <h1 class="main__welcome">Закуски</h1>
+        <div class="main__card-group">
+            <div class="main__card-group-card">
+                <div class="card__title">
+                    <img src="img/div.js-product-img(1).png" alt="" class="card__title-img">
+                </div>
+                <div class="card__info">
+                    <h1 class="card__info-name">
+                        Картофель Фри
+                    </h1>
+                    <p class="card__info-subtitle">
+                        Картофель фри, специи
+                    </p>
+                </div>
+                <div class="card__end">
+                    <div class="card__end-price"><h1>300₽</h1></div>
+                    <div class="card__end-button"><button>Купить</button></div>
+                </div>
+            </div>
+
+            <div class="main__card-group-card">
+                <div class="card__title">
+                    <img src="img/div.js-product-img(1).png" alt="" class="card__title-img">
+                </div>
+                <div class="card__info">
+                    <h1 class="card__info-name">
+                        Картофель Фри
+                    </h1>
+                    <p class="card__info-subtitle">
+                        Картофель фри, специи
+                    </p>
+                </div>
+                <div class="card__end">
+                    <div class="card__end-price"><h1>300₽</h1></div>
+                    <div class="card__end-button"><button>Купить</button></div>
+                </div>
+            </div>
+
+            <div class="main__card-group-card">
+                <div class="card__title">
+                    <img src="img/div.js-product-img(1).png" alt="" class="card__title-img">
+                </div>
+                <div class="card__info">
+                    <h1 class="card__info-name">
+                        Картофель Фри
+                    </h1>
+                    <p class="card__info-subtitle">
+                        Картофель фри, специи
+                    </p>
+                </div>
+                <div class="card__end">
+                    <div class="card__end-price"><h1>300₽</h1></div>
+                    <div class="card__end-button"><button>Купить</button></div>
+                </div>
+            </div>
+            <div class="main__card-group-card">
+                <div class="card__title">
+                    <img src="img/div.js-product-img(1).png" alt="" class="card__title-img">
+                </div>
+                <div class="card__info">
+                    <h1 class="card__info-name">
+                        Картофель Фри
+                    </h1>
+                    <p class="card__info-subtitle">
+                        Картофель фри, специи
+                    </p>
+                </div>
+                <div class="card__end">
+                    <div class="card__end-price"><h1>300₽</h1></div>
+                    <div class="card__end-button"><button>Купить</button></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

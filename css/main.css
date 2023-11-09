@@ -1,0 +1,260 @@
+.header__top__carousel {
+  display: flex;
+  overflow: hidden;
+}
+.header__top__carousel .carousel__item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+.header__top__carousel .carousel__item img {
+  display: block;
+  width: 100%;
+}
+
+.header {
+  /* .header__middle */
+  /* .header__middle-logo */
+  /* .header__middle-logo-img */
+  /* .header__middle-info */
+  /* .header__middle-info-time */
+  /* .header__middle-info-number */
+  /* .header__middle-cart */
+}
+.header__middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.header__middle-logo {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__middle-logo-img {
+  border-radius: 10px;
+}
+.header__middle-info {
+  display: flex;
+  flex-direction: row;
+}
+.header__middle-info-time {
+  font-size: 19px;
+  font-weight: lighter;
+}
+.header__middle-info-number {
+  font-size: 19px;
+  font-weight: lighter;
+}
+.header__middle-cart {
+  width: max-content;
+}
+.header__middle-cart button {
+  padding: 5px;
+  background-color: rgb(27, 27, 27);
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  text-align: center;
+  height: 40px;
+  cursor: pointer;
+}
+.header__middle-cart button i {
+  color: white;
+  font-size: large;
+  width: 120px;
+  text-align: center;
+}
+.header__middle-cart button i span {
+  margin-left: 5%;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+  transition: right 0.7s ease-in-out;
+  z-index: 1;
+}
+
+.offcanvas.show {
+  right: 0;
+}
+
+.offcanvas__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offcanvas__body ul {
+  list-style: none;
+  padding: 0;
+}
+
+.offcanvas__body ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#close-btn {
+  background-color: #333;
+  font-size: larger;
+  color: white;
+}
+
+.offcanvas__body-button {
+  color: white;
+  font-weight: 500;
+}
+
+.header {
+  /* .header__bottom */
+  /* .header__bottom-nav */
+  /* .header__bottom-link */
+}
+.header__bottom {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-top: 3%;
+}
+.header__bottom-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__bottom-link {
+  color: black;
+  font-size: medium;
+  text-decoration: none;
+  font-weight: lighter;
+}
+.header__bottom-link:hover {
+  color: #f8af35;
+}
+
+.header {
+  /* .header__bottom-dropdown */
+}
+.header__bottom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  width: 40px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 360px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+.main {
+  /* .main__welcome */
+  /* .main__card-group */
+  /* .main__card-group-card */
+}
+.main__welcome {
+  font-weight: 500;
+  color: rgb(65, 61, 61);
+  margin-bottom: 1%;
+}
+.main__card-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main__card-group-card {
+  width: 300px;
+  margin: 1%;
+}
+
+.card {
+  /* .card__title */
+  /* .card__title-img */
+  /* .card__info */
+  /* .card__info-name */
+  /* .card__info-subtitle */
+  /* .card__end */
+  /* .card__end-price */
+  /* .card__end-button */
+}
+.card__title {
+  width: 100%;
+}
+.card__title-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card__info-name {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(65, 61, 61);
+}
+.card__info-subtitle {
+  font-size: 16px;
+  font-weight: lighter;
+}
+.card__end {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__end-price h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+.card__end-button button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 125px;
+  border-radius: 25px;
+  height: 40px;
+  font-weight: lighter;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=main.css.map */
