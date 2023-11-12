@@ -142,13 +142,13 @@
     display: none;
   }
   .header__middle-info-time {
-    font-size: small;
+    font-size: medium;
     margin-bottom: 1px;
-    font-weight: bold;
+    font-weight: lighter;
   }
   .header__middle-info-number {
-    font-size: small;
-    font-weight: bold;
+    font-size: medium;
+    font-weight: lighter;
   }
   .header__middle-cart {
     width: max-content;
@@ -246,6 +246,8 @@
   }
   .header__bottom-nav {
     overflow-y: auto;
+    position: sticky;
+    top: 0;
   }
   .header__bottom-nav::-webkit-scrollbar {
     width: 0;
@@ -254,9 +256,18 @@
     margin: 2%;
     font-size: medium;
   }
+  .header__bottom-dropdown {
+    display: none;
+  }
   .dropdown-content {
     z-index: 1;
     position: relative;
+  }
+  .fixed {
+    display: block;
+    position: sticky;
+    top: 0;
+    height: max-content;
   }
 }
 .main {
@@ -377,6 +388,12 @@
     height: 30px;
   }
 }
+@font-face {
+  font-family: "Zt Chablis Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Zt Chablis Regular"), url("fonts/ZtChablisRegular-51Y1L.woff") format("woff");
+}
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Zt Chablis Regular";
 }/*# sourceMappingURL=main.css.map */

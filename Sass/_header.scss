@@ -172,16 +172,16 @@
       /* .header__middle-info-time */
   
       &__middle-info-time {
-        font-size: small;
+        font-size: medium;
         margin-bottom: 1px;
-        font-weight: bold;
+        font-weight: lighter;
       }
   
       /* .header__middle-info-number */
   
       &__middle-info-number {
-        font-size: small;
-        font-weight: bold;
+        font-size: medium;
+        font-weight: lighter;
       }
   
       /* .header__middle-cart */
@@ -301,6 +301,8 @@
 
 		&__bottom-nav {
       overflow-y: auto;
+      position: sticky;
+      top: 0;
 		}
 
     &__bottom-nav::-webkit-scrollbar {
@@ -316,6 +318,7 @@
 		/* .header__bottom-dropdown */
 
 		&__bottom-dropdown {
+      display: none;
 		}
 }
 .dropdown-content {
@@ -323,4 +326,10 @@
   position: relative;
 }
 
+.fixed {
+  display: block;
+  position: sticky;
+  top: 0;
+  height: max-content;
+}
 }

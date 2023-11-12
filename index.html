@@ -29,51 +29,53 @@
             <!-- Header-Middle -->
             
         </div>
-        <div class="header__middle">
-            <div class="header__middle-logo">
-                <img src="img/logo.jpg" alt="" class="header__middle-logo-img">
-                    <h1 class="header__middle-info-time">ДОСТАВКА (c 16:00 до 3:00) </h1>
-                    <h1 class="header__middle-info-number">+7 (952) 025-46-48</h1>
+        <div class="fixed">
+            <div class="header__middle">
+                <div class="header__middle-logo">
+                    <img src="img/logo.jpg" alt="" class="header__middle-logo-img">
+                        <h1 class="header__middle-info-time">ДОСТАВКА (c 16:00 до 3:00) </h1>
+                        <h1 class="header__middle-info-number">+7 (952) 025-46-48</h1>
+                </div>
+                
+    
+                <div class="header__middle-cart">
+                    <div id="offcanvas" class="offcanvas">
+                        <div class="offcanvas__header">
+                          <h2>Корзина</h2>
+                          <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="offcanvas__body">
+                          <h1 class="offcanvas__body-title">Ой, Пусто!</h1>
+                          <p class="offcanvas__body-subtitle">Ваша корзина пуста, откройте «Меню»
+                            и выберите понравившийся товар.</p>
+                            <button class="offcanvas__body-button">К покупкам</button>
+                        </div>
+                       </div>
+                       
+                       <button id="open-btn"><i class="fa-solid fa-cart-shopping"><span>Корзина пуста</span></i></button>
+                </div>
             </div>
-            
-
-            <div class="header__middle-cart">
-                <div id="offcanvas" class="offcanvas">
-                    <div class="offcanvas__header">
-                      <h2>Корзина</h2>
-                      <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
-                    </div>
-                    <div class="offcanvas__body">
-                      <h1 class="offcanvas__body-title">Ой, Пусто!</h1>
-                      <p class="offcanvas__body-subtitle">Ваша корзина пуста, откройте «Меню»
-                        и выберите понравившийся товар.</p>
-                        <button class="offcanvas__body-button">К покупкам</button>
-                    </div>
-                   </div>
-                   
-                   <button id="open-btn"><i class="fa-solid fa-cart-shopping"><span>Корзина пуста</span></i></button>
-            </div>
-        </div>
-        <div class="header__bottom">
-            <div class="header__bottom-nav">
-                <a href="#soup" class="header__bottom-link">Супы</a>
-                <a href="#eat" class="header__bottom-link">Закуски</a>
-                <a href="#salat" class="header__bottom-link">Салаты</a>
-                <a href="#pasta" class="header__bottom-link">Паста</a>
-                <a href="#pizza" class="header__bottom-link">Пицца</a>
-                <a href="#sandwitch" class="header__bottom-link">Сэндвичи</a>
-                <a href="#sandwitch" class="header__bottom-link">Бургеры</a>
-                <a href="#desert" class="header__bottom-link">Десерты</a>
-                <a href="#drinks" class="header__bottom-link">Напитки</a>
-                <div class="header__bottom-dropdown">
-                    <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="#">Контакты</a>
-                      <a href="#">О нас</a>
-                      <a href="#">Прочее</a>
-                    </div>
-                  </div>             
-             
+            <div class="header__bottom">
+                <div class="header__bottom-nav sticky-top">
+                    <a href="#soup" class="header__bottom-link">Супы</a>
+                    <a href="#eat" class="header__bottom-link">Закуски</a>
+                    <a href="#salat" class="header__bottom-link">Салаты</a>
+                    <a href="#pasta" class="header__bottom-link">Паста</a>
+                    <a href="#pizza" class="header__bottom-link">Пицца</a>
+                    <a href="#sandwitch" class="header__bottom-link">Сэндвичи</a>
+                    <a href="#sandwitch" class="header__bottom-link">Бургеры</a>
+                    <a href="#desert" class="header__bottom-link">Десерты</a>
+                    <a href="#drinks" class="header__bottom-link">Напитки</a>
+                    <div class="header__bottom-dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">Контакты</a>
+                          <a href="#">О нас</a>
+                          <a href="#">Прочее</a>
+                        </div>
+                      </div>             
+                 
+                </div>
             </div>
         </div>
     </header>
@@ -707,6 +709,7 @@
             </div>
         </div>
     </main>
+
 
     <script src="js/main.js"></script>
 </body>
