@@ -10,19 +10,17 @@ closeBtn.addEventListener('click', function() {
  offcanvas.classList.remove('show');
 });
 
-// dropdown
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-  // Закройте выпадающее меню, если пользователь щелкает за его пределами
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
+      let dropdowns = document.getElementsByClassName("dropdown-content");
+      let i;
       for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
+        let openDropdown = dropdowns[i];
         if (openDropdown.classList.contains('show')) {
           openDropdown.classList.remove('show');
         }
