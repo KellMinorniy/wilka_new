@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header__top__carousel {
   display: flex;
   overflow: hidden;
@@ -85,7 +86,7 @@
   padding: 20px;
   overflow-y: auto;
   transition: right 0.7s ease-in-out;
-  z-index: 1;
+  z-index: 30;
 }
 
 .offcanvas.show {
@@ -179,6 +180,9 @@
   margin-top: 3%;
 }
 .header__bottom-nav {
+  position: sticky;
+  top: 0; /* или любое другое значение для вашего дизайна */
+  background-color: #fff; /* просто пример для наглядности */
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -243,11 +247,12 @@
   }
   .header__bottom {
     width: 100%;
+    overflow: auto;
   }
   .header__bottom-nav {
-    overflow-y: auto;
     position: sticky;
     top: 0;
+    overflow: auto;
   }
   .header__bottom-nav::-webkit-scrollbar {
     width: 0;
@@ -263,11 +268,90 @@
     z-index: 1;
     position: relative;
   }
-  .fixed {
-    display: block;
-    position: sticky;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+  background-color: rgb(27, 27, 27);
+}
+.menu__button {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border: none;
+  box-shadow: none;
+  border-radius: 10px;
+}
+.menu__button > i {
+  font-size: larger;
+  color: white;
+}
+.menu__content {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2%;
+}
+.menu__link {
+  color: white;
+  text-decoration: none;
+  margin-top: 35%;
+}
+.menu__button--hidden {
+  display: none;
+}
+.menu--open {
+  width: 10%;
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .menu {
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 0;
     height: max-content;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+  }
+  .menu__button {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+  }
+  .menu__button > i {
+    font-size: larger;
+  }
+  .menu__content {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .menu__link {
+    color: white;
+    text-decoration: none;
+    margin-top: 25%;
+  }
+  .menu__button--hidden {
+    display: none;
+  }
+  .menu--open {
+    width: 25%;
   }
 }
 .main {
@@ -390,8 +474,6 @@
 }
 @font-face {
   font-family: "Zt Chablis Regular";
-  font-style: normal;
-  font-weight: normal;
   src: local("Zt Chablis Regular"), url("fonts/ZtChablisRegular-51Y1L.woff") format("woff");
 }
 body {
