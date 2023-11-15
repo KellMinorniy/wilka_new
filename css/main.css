@@ -109,6 +109,11 @@
   text-decoration: none;
 }
 
+.offcanvas__body-reminder {
+  color: #c9bfbf;
+  font-weight: bold;
+}
+
 #close-btn {
   background-color: #333;
   font-size: larger;
@@ -341,6 +346,7 @@
     flex-direction: column;
     margin-top: 2%;
     margin-left: 5%;
+    margin-bottom: 25%;
   }
   .menu__link {
     color: white;
