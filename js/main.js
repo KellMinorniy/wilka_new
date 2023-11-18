@@ -1,6 +1,6 @@
-var offcanvas = document.getElementById('offcanvas');
-var openBtn = document.getElementById('open-btn');
-var closeBtn = document.getElementById('close-btn');
+let offcanvas = document.getElementById('offcanvas');
+let openBtn = document.getElementById('open-btn');
+let closeBtn = document.getElementById('close-btn');
 
 openBtn.addEventListener('click', function() {
  offcanvas.classList.add('show');
@@ -31,8 +31,8 @@ function myFunction() {
 
 
 // hamburger
-var menu = document.querySelector('.menu');
-var button = document.querySelector('.menu__button');
+let menu = document.querySelector('.menu');
+let button = document.querySelector('.menu__button');
 
 button.addEventListener('click', function() {
  menu.classList.toggle('menu--open');
@@ -40,8 +40,8 @@ button.addEventListener('click', function() {
 });
 
 document.addEventListener('click', function(event) {
- var isClickInsideMenu = menu.contains(event.target);
- var isClickOnButton = button.contains(event.target);
+ let isClickInsideMenu = menu.contains(event.target);
+ let isClickOnButton = button.contains(event.target);
 
  if (!isClickInsideMenu && !isClickOnButton) {
   menu.classList.remove('menu--open');
